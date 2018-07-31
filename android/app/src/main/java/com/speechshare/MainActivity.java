@@ -29,13 +29,14 @@ public class MainActivity extends ReactActivity {
 
                 if(receivedIntent != null) {
                     String intentType = receivedIntent.getType();
-                    bundle.putString("intentType", intentType);
 
                     String intentText = receivedIntent.getStringExtra(Intent.EXTRA_TEXT);
                     bundle.putString("intentText", intentText);
 
                     Uri intentUri = (Uri) receivedIntent.getParcelableExtra(Intent.EXTRA_STREAM);
                     bundle.putString("intentUri", intentUri == null ? null : intentUri.toString());
+
+                    bundle.putString("intentType", intentUri != null ? getContentResolver().getType(intentUri): intentType);
                 }
 
                 return bundle;

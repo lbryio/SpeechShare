@@ -4,8 +4,11 @@
 
 android/.gradle
 android/.idea
+android/app/app.iml
+android/app/app-release.apk
 android/app/build
 android/build
+android/local.properties
 
 # expo
 .expo/
