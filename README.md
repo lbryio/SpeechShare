@@ -1,4 +1,5 @@
-# SpeechShare
+# SpeechShare  
+![alt text](https://material.io/tools/icons/static/icons/outline-share-24px.svg "Share") **Spee.ch**
 
 A simple photo sharing application for Android.  
 Add the ability to Share to Spee.ch in other Android Applications.
